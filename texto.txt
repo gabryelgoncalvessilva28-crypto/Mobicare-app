@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobicare</title>
+
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      background: white;
+      padding: 20px;
+    }
+
+    h1 { color: green; }
+
+    input {
+      width: 90%;
+      padding: 12px;
+      margin: 8px;
+      border: 1px solid green;
+      border-radius: 8px;
+    }
+
+    button {
+      width: 95%;
+      padding: 15px;
+      background: green;
+      color: white;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Mobicare</h1>
+
+<input id="email" placeholder="Email">
+<input id="senha" type="password" placeholder="Senha">
+
+<button onclick="login()">Entrar</button>
+
+<script>
+function login() {
+  const email = document.getElementById('email').value;
+  const senha = document.getElementById('senha').value;
+
+  if(email === "mobicare2026@gmail.com" && senha === "pritfieb") {
+    alert("Login realizado!");
+  } else {
+    alert("Dados incorretos");
+  }
+}
+</script>
+
+</body>
+</html>
